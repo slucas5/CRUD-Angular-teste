@@ -1,0 +1,17 @@
+<h1>Editar Post</h1>
+
+<div>
+  <label for="titulo">Titulo</label>
+  <input type="text" placeholder="Titulo para seu post" [(ngModel)]="request.titulo">
+  <br><br>
+  <label for="descricao">Descricao</label>
+  <input type="text" placeholder="Descricao para seu post" [(ngModel)]="request.descricao">
+  <br>
+  <button (click)="update()">Editar!</button>
+</div>
+
+<div *ngIf="responseUpdate.titulo">
+  <h2>Atualizado para</h2>
+  <p>Titulo: {{responseUpdate.titulo}}</p>
+  <p>Descrição: {{responseUpdate.descricao}}</p>
+</div>

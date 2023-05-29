@@ -1,0 +1,12 @@
+h1 {
+  margin: 1rem 0;
+}
+
+div {
+  width: 480px;
+  background-color: #eee;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem;
+  margin: 1rem 0;
+}

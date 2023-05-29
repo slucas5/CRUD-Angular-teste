@@ -1,0 +1,15 @@
+<h1>Criar Posts</h1>
+
+<div>
+  <label for="titulo">Titulo</label>
+  <input type="text" placeholder="Titulo para seu post" [(ngModel)]="request.titulo">
+  <br><br>
+  <label for="descricao">Descricao</label>
+  <input type="text" placeholder="Descricao para seu post" [(ngModel)]="request.descricao">
+  <br>
+  <button (click)="cadastrar()">Postar!</button>
+</div>
+
+<div *ngIf="response.mensagem">
+  <p>{{response.mensagem}}</p>
+</div>

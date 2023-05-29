@@ -1,0 +1,9 @@
+<h1>Posts</h1>
+
+<div *ngFor="let post of responsePost">
+  <h2>{{post.titulo}}</h2>
+  <p>{{post.descricao}}</p>
+  <a routerLink="/editar-post/{{post.id}}">Editar post</a>
+  <br><br>
+  <button (click)="deletar(post)">deletar post</button>
+</div>
